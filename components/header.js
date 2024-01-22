@@ -45,7 +45,7 @@ connectedCallback() {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <div class="navbar" id="MyTopnav">
         <a href="./index.html" class="active">About</a>
-        <a href="./projects.html" class="active">Projects</a>       
+        <a href="./projects.html" class="active">Projects</a>      
     </div>
     </header>
     `;
