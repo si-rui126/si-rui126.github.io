@@ -185,6 +185,10 @@ li {
     padding: 2%;
   }
 
+  .project-img-descr{
+    font-size: 12px;
+  }
+
   .mini-text {
     width: 80%;
   }
