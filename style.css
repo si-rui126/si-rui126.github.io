@@ -50,7 +50,7 @@ body {
 
   a:link, a:visited {
     text-decoration: none;
-    color: #1b708a;
+    color: #37676b;
   }
 
   a:hover{
@@ -92,7 +92,7 @@ body {
   .subtext {
     font-size: 15px;
     font-family: monospace, sans-serif;
-    color:#3c787e;
+    color:"black";
   }
 
   .project-cont {
@@ -138,7 +138,8 @@ body {
     }
   
     .project-img:hover {
-      filter: brightness(0.4)
+      filter: brightness(0.4);
+      cursor: pointer;
     }
   }
 

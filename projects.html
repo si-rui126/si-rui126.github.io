@@ -12,6 +12,13 @@
 </head>
 <title>Projects</title>
 
+<style>
+    a:link, a:visited {
+    text-decoration: none;
+    color: #319ab9;
+  }
+</style>
+
 <header-component></header-component>
 
 <div class="middlecolumn">
@@ -23,7 +30,7 @@
             <img id="elev-img" class="project-img" src="images/elevator.png" onclick="show_descr('elev-img', 'elev-word')">
             <div id="elev-word" class="project-img-descr" onclick="show_descr('elev-img', 'elev-word')">End-to-end text generator built with a fine-tuned version of GPT2, hosted on Streamlit as a web app. Creates your own personalized elevator pitch!</div>
         </div>
-        <p>Elevator Pitch Generator with LLM</p>
+        <p><strong>Elevator Pitch Generator with LLM</strong></p>
         <p class="subtext">Pytorch, GPT2, LLM Fine-Tuning, Transformers, Streamlit</p>
         <p>
             <a href="https://text-gen-app-iq4ncbimvgwoawcuhzkuha.streamlit.app/" target="_blank">Web App</a> |
@@ -36,7 +43,7 @@
             <img id="bot-img" class="project-img" src="images\support.jpg" onclick="show_descr('bot-img', 'bot-word')">
             <div id="bot-word" class="project-img-descr" onclick="show_descr('bot-img', 'bot-word')">Language model built with Pytorch trained on IT support related chatlogs. (still under construction)</div>
         </div>
-        <p>Tech Support Chatbot</p>
+        <p><strong>Tech Support Chatbot</strong></p>
         <p class="subtext">Pytorch, NLP, Neural Networks, Deep Learning</p>
         <p>
             <a href="https://github.com/si-rui126/tech-supp-chatbot" target="_blank">GitHub</a>
@@ -48,7 +55,7 @@
             <img id="chd-img" class="project-img" src="images/heart_attack.jpg" onclick="show_descr('chd-img', 'chd-word')">
             <div id="chd-word" class="project-img-descr" onclick="show_descr('chd-img', 'chd-word')">Logistic regression model that predicts if a patient was at risk of heart disease. Used feature engineering, ridge regularization, and likelihood tests.</div>
         </div>
-        <p>Predicting Coronary Heart Disease with Regression</p>
+        <p><strong>Predicting Coronary Heart Disease with Regression</strong></p>
         <p class="subtext">Logistic Regression, R</p>
         <p><a href="regression.html">Report</a></p>
     </div>
@@ -58,7 +65,7 @@
             <img id="dia-img" class="project-img" src="images\neural_net.jpg" onclick="show_descr('dia-img', 'dia-word')">
             <div id="dia-word" class="project-img-descr" onclick="show_descr('dia-img', 'dia-word')">Feedforward neural network that predicts if a patient is a risk for diabetes or not.</div>
         </div>
-        <p>Diabetes Diagnosis Classifier with Neural Networks</p>
+        <p><strong>Diabetes Diagnosis Classifier with Neural Networks</strong></p>
         <p class="subtext">Tensorflow, Neural Networks, Deep Learning</p>
         <p>
             <a href="diabetes.html">Report</a> |
@@ -71,7 +78,7 @@
             <img id="sur-img" class="project-img" src="images/clinical_trials.jpg" onclick="show_descr('sur-img', 'sur-word')">
             <div id="sur-word" class="project-img-descr" onclick="show_descr('sur-img', 'sur-word')">Survival analysis on clinical trial for throat cancer. Performed analysis with Cox regresion, Cox PH, Kaplan-Meier, and log-rank tests. </div>
         </div>
-        <p>Clinical Trial on Treatment for Pharyngeal Cancer</p>
+        <p><strong>Clinical Trial on Treatment for Pharyngeal Cancer</strong></p>
         <p class="subtext">Survival Analysis, Biostatistics, SAS</p>
         <p><a href="survival.html">Report</a></p>
     </div>
@@ -81,7 +88,7 @@
             <img id="scrape-img" class="project-img" src="images/tie.jpg" onclick="show_descr('scrape-img', 'scrape-word')">
             <div id="scrape-word" class="project-img-descr" onclick="show_descr('scrape-img', 'scrape-word')">Web scraping bot that extracts job data such as title, salary, and location from Indeed. There was supposed to be more but... I ran out of API keys.</div>
         </div>
-            <p>Web Scraping Indeed Job Postings</p>
+            <p><strong>Web Scraping Indeed Job Postings</strong></p>
             <p class="subtext">Python, BeautifulSoup, web scraping, data mining</p>
             <p><a href="https://www.kaggle.com/code/lumarian/web-scraping-indeed-job-postings" target="_blank">Kaggle</a></p>
     </div>
@@ -91,7 +98,7 @@
             <img id="consort-img" class="project-img" src="images/dashboard_png.png" onclick="show_descr('consort-img', 'consort-word')">
             <div id="consort-word" class="project-img-descr" onclick="show_descr('consort-img', 'consort-word')">Dashboard I worked on during my time at Edwards Lifesciences. Categorizes patients by their trial status as specified by the biostatisticians, and generates a consort diagram.</div>
         </div>
-            <p>Clinical Trial Tracker Dashboard</p>
+            <p><strong>Clinical Trial Tracker Dashboard</strong></p>
             <p class="subtext">R, R shiny</p>
     </div>
 
@@ -101,16 +108,16 @@
             <div id="crf-word" class="project-img-descr" onclick="show_descr('crf-img', 'crf-word')">Python Flask application I built at Edwards Lifesciences. Automatically annotates Case Report Forms (CRF) with CDISC 
                  standards for submission to the FDA</div>
         </div>
-            <p>Flask App for Automatic CRF Annotations</p>
+            <p><strong>Flask App for Automatic CRF Annotations</strong></p>
             <p class="subtext">Python, NLP, Flask</p>
     </div>
 
     <div class="project-cont">
         <div class="project-img-wrap">
             <img id="com-img" class="project-img" src="images/CoM.png" onclick="show_descr('com-img', 'com-word')">
-            <div id="com-word" class="project-img-descr">Website hosted on AWS that archives Dungeons and Dragons campaigns run by me and my friends. Indefinitely under construction &#128575</div>
+            <div id="com-word" class="project-img-descr" onclick="show_descr('com-img', 'com-word')">Website hosted on AWS that archives Dungeons and Dragons campaigns run by me and my friends. Indefinitely under construction &#128575</div>
         </div>
-            <p>City of Mist Website</p>
+            <p><strong>City of Mist Website</strong></p>
             <p class="subtext">HTML, CSS, Javascript, UI/UX, AWS</p>
             <p>
                 <a href="http://www.misterysolvers.com/" target="_blank">Website</a> |
@@ -123,7 +130,7 @@
             <img id="lol-img" class="project-img" src="images/decision_tree.png" onclick="show_descr('lol-img', 'lol-word')">
             <div id="lol-word" class="project-img-descr" onclick="show_descr('lol-img', 'lol-word')">Predicting win probability in League of Legends with a variety of machine learning methods.</div>
         </div>
-            <p>League of Legends Win Probability Predictor</p>
+            <p><strong>League of Legends Win Probability Predictor</strong></p>
             <p class="subtext">Python, Decision Trees, Random Forest, XGBoost, sklearn</p>
             <p><a href="https://www.kaggle.com/code/lumarian/league-of-legends-10-min-prediction-model" target="_blank">Kaggle</a></p>
     </div>
