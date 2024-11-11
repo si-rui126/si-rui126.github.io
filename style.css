@@ -1,3 +1,4 @@
+/* general styles */
 body {
     background-color: #dfebe9;
   }
@@ -9,18 +10,30 @@ body {
     margin-right: auto;
     display: flex;
     flex-direction: column;
-    padding: 2%;
   }
-  
+
+  .grid-container{
+    width: 100%;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    gap: 1%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: auto;
+  }
+
   .main-container {
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    align-self: center;
     padding: 2%;
   }
   
-  h1, h2, h3, h4 {
+  h1, h2, h3, h4, h5 {
     font-family: 'Tahoma', sans-serif;
     transition: 700ms ease;
     font-variation-settings: "wght" 311;
@@ -37,14 +50,13 @@ body {
 
   a:link, a:visited {
     text-decoration: none;
-    color: #1b708a
+    color: #1b708a;
   }
 
   a:hover{
     letter-spacing: 1px;
     text-decoration: underline;
   }
-
   
   p {
     font-size: 16px;
@@ -55,193 +67,148 @@ body {
     letter-spacing: .5px;
   }
 
-  .subtext {
-    font-size: 18px;
+  .mini-text{
+    font-size: 16px;
     font-family: monospace, sans-serif;
-    color:#6db0b6;
+    line-height: 150%;
+    text-align: left;
+    color: #456061;
+    letter-spacing: .5px;
+    width: 40%;
+    text-align: center;
   }
 
-  .txtbox {
-    color: white;
-    width: 25%;
-    background-color: #79a9ab;
-    border-radius: 15px;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    margin: 2%;
-    text-align: center;
+  .side-by{
+    float: center;
+    align-items: center;
+    display: flex;
+  }
+
+  hr{
+    border-color: #37676b;
+  }
+
+/* project styles */
+  .subtext {
+    font-size: 15px;
+    font-family: monospace, sans-serif;
+    color:#3c787e;
   }
 
   .project-cont {
     background-color: white;
-    border-radius: 15px;
-    margin: 2%;
+    margin: 1%;
+    padding: 2%;
+    width: 100%;
+    aspect-ratio: 2/3;
+    align-items: center;
+  }
+
+  .project-img-wrap{
+    position: relative;
+    text-align: center;
   }
 
   .project-img{
     position: relative;
-    padding: 2%;
-    max-width: 98%;
+    margin: auto;
+    max-width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
-    border-radius: 15px;
-  }
-  
-  .project-left{
-    padding: 1%;
-    width: 25%;
-    float: left;
-  }
-  
-  .project-right{
-    padding: 1%;
-    width: 75%;
-    float: right;
   }
 
-  .side-by{
-    float: left;
+  .project-img-descr{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    font-family: monospace, sans-serif;
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
   }
+
+  @media screen and (min-width: 800px) {
+    .project-img-wrap:hover .project-img-descr{
+      visibility: visible;
+      opacity: 1;
+    }
+  
+    .project-img:hover {
+      filter: brightness(0.4)
+    }
+  }
+
 
   * {
     box-sizing: border-box;
   }
 
-  
-  /* The actual timeline (the vertical ruler) */
-  .timeline {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /* The actual timeline (the vertical ruler) */
-  .timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: white;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
-  }
-  
-  /* Container around content */
-  .container {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
-  }
-  
-  /* The circles on the timeline */
-  .container::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -17px;
-    background-color: white;
-    border: 4px solid #FF9F55;
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
-  }
-  
-  /* Place the container to the left */
-  .left {
-    left: 0;
-  }
-  
-  /* Place the container to the right */
-  .right {
-    left: 50%;
-  }
-  
-  /* Add arrows to the left container (pointing right) */
-  .left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid white;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
-  }
-  
-  /* Add arrows to the right container (pointing left) */
-  .right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
-  
-  /* Fix the circle for containers on the right side */
-  .right::after {
-    left: -16px;
-  }
-  
-  /* The actual content */
-  .content {
-    padding: 20px 30px;
-    background-color: white;
-    position: relative;
-    border-radius: 6px;
-  }
-  
-  /* Media queries - Responsive timeline on screens less than 600px wide */
-  @media screen and (max-width: 600px) {
-  /* Place the timelime to the left */
-    .timeline::after {
-      left: 31px;
-    }
-  
-  /* Full-width containers */
-    .container {
-      width: 100%;
-      padding-left: 70px;
-      padding-right: 25px;
-    }
-  
-  /* Make sure that all arrows are pointing leftwards */
-    .container::before {
-      left: 60px;
-      border: medium solid white;
-      border-width: 10px 10px 10px 0;
-      border-color: transparent white transparent transparent;
-    }
-  
-  /* Make sure all circles are at the same spot */
-    .left::after, .right::after {
-      left: 15px;
-    }
-  
-  /* Make all right containers behave like the left ones */
-    .right {
-      left: 0%;
-    }
-  }
+/* resume styles */
+.indented-text {
+  text-indent: 15px;
+  line-height: 100%;
+}
+
+.res-p {
+  font-size: 14px;
+  color: #37676b;
+}
+
+.res-h1 {
+  font-size: 24px;
+  font-family:Verdana,sans-serif;
+  color: #37676b;
+}
+.res-h2 {
+  font-size: 16px;
+  font-family:Verdana,sans-serif;
+  color: #37676b;
+}
+
+li {
+  font-size: 14px;
+  color: #37676b;
+}
+
+
 
 /* responsiveness */
 @media screen and (max-width: 800px) {
-  .container, .project-cont, .project-img, .project-left, .project-right, .txtbox, .middlecolumn {
+  .container, .project-img, .project-left, .project-right, .txtbox, .middlecolumn{
     margin-left: 1%;
     margin-right: 1%;   
     width: 98%;
     padding: 2%;
   }
 
+  .mini-text {
+    width: 80%;
+  }
 }
+
+@media screen and (max-width: 1600px) {
+  .grid-container {
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .grid-container {
+    grid-template-columns: 33% 33% 33%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .grid-container {
+    grid-template-columns: 50% 50%;
+  }
+
+  p, .project-img-descr, .subtext{
+    font-size: 14px;
+  }
+}
+

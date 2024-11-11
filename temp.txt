@@ -1,0 +1,32 @@
+About
+Hi, My name is Marian Lu, and I am an Applied Statistics M.S. student at California State Long Beach. I'm interested in data science, machine learning, and AI. I did my undergrad at the University of Minnesota with a BS in Architecture and a minor in Statistics. Pretty crazy career pivot, huh? But I realized that I always like creating things, whether it's designing floorplans or building regression models. At the end, they are both something that I love.
+I consider myself a self-motivated person. I self taught myself HTML/CSS/javacript, machine learning concepts, and other programming concepts outside of school and work. I am quick to pick up new skills and am always working to improve.
+In my free time, I like to draw, play TTRPGs and League of Legends, compose music, and recently, design websites. A goal of mine is to someday solo develop an indie game, but that will be a long time in the making.
+
+
+##### Projects and their descriptions
+
+Web Scraping
+I used the package BeautifulSoup to scrape data frome Indeed. Through this project, I got experience with website scraping APIs, HTML parsing, and data cleaning. 
+                I was also pleased to discover that being familiar HTML and CSS was helpful in understanding page structure so that means I didn't self-teach myself those for no reason. 
+                Who knew knowing web development languages came in handy in statistics?
+                This project is still in progress, but I'm excited to analyze the data I've extracted.
+
+Clinical Tracker Dashboard
+The program tracks the progress of a clinical trial. 
+                The program takes in datasets as input and categorizes patients by groups specified by the biostatisticians. 
+                Since the program is intended to be used by biostatisticians and medical writers who may not have much experience with programming, I built a dashboard with a user friendly UI to expand 
+                the scope of users.
+                In addition, the names of variables are not standardized across datasets, so the dashboard adapts to the input and automatically offers the existing variables as options in a 
+                dropdown menu.
+
+CoM website
+Used HTML and CSS to build a website from scratch. The website is an archive for a TTRPG ran with my friends. 
+                This was only for personal use, so I had room to be creative and customize the site at my own pace. 
+                Through this project, I learned a lot about web development and gained understanding in cloud based platforms.
+                This website is hosted on AWS, and I had the opportunity to be an AWS user.
+
+LoL win prediction
+A very simple decision tree that predicts the win probability of a League of Legends game based on the first 10 minutes.
+                I was curious to how the win probability is determined by the overlay in pro League of Legends matches, 
+                so I was inspired to build my own prediction model as practice.

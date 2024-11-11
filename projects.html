@@ -7,74 +7,125 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="./components/header.js" type="text/javascript" defer></script>
+    <script src="./components/scripts.js" type="text/javascript" defer></script>
     <script src="https://kit.fontawesome.com/166b9e2f1d.js" crossorigin="anonymous"></script>
 </head>
 <title>Projects</title>
 
 <header-component></header-component>
 
-
 <div class="middlecolumn">
     <h1>Projects</h1>
+    <p>note: mobile users can tap on the images for project description. both clicking and hovering work on desktop!!</p>
+<div class="grid-container">
     <div class="project-cont">
-        <div class="project-left">
-            <img class="project-img" src="images/job_search.jpg">
+        <div class="project-img-wrap">
+            <img id="elev-img" class="project-img" src="images/elevator.png" onclick="show_descr('elev-img', 'elev-word')">
+            <div id="elev-word" class="project-img-descr" onclick="show_descr('elev-img', 'elev-word')">End-to-end text generator built with a fine-tuned version of GPT2, hosted on Streamlit as a web app. Creates your own personalized elevator pitch!</div>
         </div>
-        <div class="project-right">
-            <h3>Web Scraping Indeed Job Postings</h3>
-            <p class="subtext">Languages/skills: Python, BeautifulSoup, web scraping</p>
-            <p>I used the package BeautifulSoup to scrape data frome Indeed. Through this project, I got experience with website scraping APIs, HTML parsing, and data cleaning. 
-                I was also pleased to discover that being familiar HTML and CSS was helpful in understanding page structure so that means I didn't self-teach myself those for no reason. 
-                Who knew knowing web development languages came in handy in statistics?
-                This project is still in progress, but I'm excited to analyze the data I've extracted.
-            </p>
-            <a href="https://www.kaggle.com/code/lumarian/web-scraping-indeed-job-postings">Visit Kaggle notebook ></a>
-        </div>
+        <p>Elevator Pitch Generator with LLM</p>
+        <p class="subtext">Pytorch, GPT2, LLM Fine-Tuning, Transformers, Streamlit</p>
+        <p>
+            <a href="https://text-gen-app-iq4ncbimvgwoawcuhzkuha.streamlit.app/" target="_blank">Web App</a> |
+            <a href="https://github.com/si-rui126/text-gen-app" target="_blank">GitHub</a>
+        </p>
     </div>
+
     <div class="project-cont">
-        <div class="project-left">
-            <img class="project-img" src="images/dashboard_png.png">
+        <div class="project-img-wrap">
+            <img id="bot-img" class="project-img" src="images\support.jpg" onclick="show_descr('bot-img', 'bot-word')">
+            <div id="bot-word" class="project-img-descr" onclick="show_descr('bot-img', 'bot-word')">Language model built with Pytorch trained on IT support related chatlogs. (still under construction)</div>
         </div>
-        <div class="project-right">
-            <h3>Clinical Trial Tracker Dashboard</h3>
-            <p class="subtext">Languages/skills: R, R shiny</p>
-            <p>The program tracks the progress of a clinical trial. 
-                The program takes in datasets as input and categorizes patients by groups specified by the biostatisticians. 
-                Since the program is intended to be used by biostatisticians and medical writers who may not have much experience with programming, I built a dashboard with a user friendly UI to expand 
-                the scope of users.
-                In addition, the names of variables are not standardized across datasets, so the dashboard adapts to the input and automatically offers the existing variables as options in a 
-                dropdown menu.</p><p>
-                (Note: The image is not of the actual dashboard, since I'm not allowed to directly share it.) 
-            </p>
-        </div>
+        <p>Tech Support Chatbot</p>
+        <p class="subtext">Pytorch, NLP, Neural Networks, Deep Learning</p>
+        <p>
+            <a href="https://github.com/si-rui126/tech-supp-chatbot" target="_blank">GitHub</a>
+        </p>
     </div>
+
     <div class="project-cont">
-        <div class="project-left">
-            <img class="project-img" src="images/CoM.png">
+        <div class="project-img-wrap">
+            <img id="chd-img" class="project-img" src="images/heart_attack.jpg" onclick="show_descr('chd-img', 'chd-word')">
+            <div id="chd-word" class="project-img-descr" onclick="show_descr('chd-img', 'chd-word')">Logistic regression model that predicts if a patient was at risk of heart disease. Used feature engineering, ridge regularization, and likelihood tests.</div>
         </div>
-        <div class="project-right">
-            <h3>City of Mist Website</h3>
-            <p class="subtext">Languages/skills: HTML, CSS, Javascript, cloud computing platforms</p>
-            <p>Used HTML and CSS to build a website from scratch. The website is an archive for a TTRPG ran with my friends. 
-                This was only for personal use, so I had room to be creative and customize the site at my own pace. 
-                Through this project, I learned a lot about web development and gained understanding in cloud based platforms.
-                This website is hosted on AWS, and I had the opportunity to be an AWS user.
-            </p>
-            <a href="http://www.misterysolvers.com/">Visit Site ></a>
-        </div>
+        <p>Predicting Coronary Heart Disease with Regression</p>
+        <p class="subtext">Logistic Regression, R</p>
+        <p><a href="regression.html">Report</a></p>
     </div>
+
     <div class="project-cont">
-        <div class="project-left">
-            <img class="project-img" src="images/decision_tree.png">
+        <div class="project-img-wrap">
+            <img id="dia-img" class="project-img" src="images\neural_net.jpg" onclick="show_descr('dia-img', 'dia-word')">
+            <div id="dia-word" class="project-img-descr" onclick="show_descr('dia-img', 'dia-word')">Feedforward neural network that predicts if a patient is a risk for diabetes or not.</div>
         </div>
-        <div class="project-right">
-            <h3>League of Legends Win Probability Prediction</h3>
-            <p class="subtext">Languages/skills: Python, Decision Trees, Machine Learning</p>
-            <p>A very simple decision tree that predicts the win probability of a League of Legends game based on the first 10 minutes.
-                I was curious to how the win probability is determined by the overlay in pro League of Legends matches, 
-                so I was inspired to build my own prediction model as practice.
-            </p>
-            <a href="https://www.kaggle.com/code/lumarian/league-of-legends-10-min-prediction-model">Visit Kaggle notebook ></a>
-        </div>
+        <p>Diabetes Diagnosis Classifier with Neural Networks</p>
+        <p class="subtext">Tensorflow, Neural Networks, Deep Learning</p>
+        <p>
+            <a href="diabetes.html">Report</a> |
+            <a href="">GitHub</a>
+        </p>
     </div>
+
+    <div class="project-cont">
+        <div class="project-img-wrap">
+            <img id="sur-img" class="project-img" src="images/clinical_trials.jpg" onclick="show_descr('sur-img', 'sur-word')">
+            <div id="sur-word" class="project-img-descr" onclick="show_descr('sur-img', 'sur-word')">Survival analysis on clinical trial for throat cancer. Performed analysis with Cox regresion, Cox PH, Kaplan-Meier, and log-rank tests. </div>
+        </div>
+        <p>Clinical Trial on Treatment for Pharyngeal Cancer</p>
+        <p class="subtext">Survival Analysis, Biostatistics, SAS</p>
+        <p><a href="survival.html">Report</a></p>
+    </div>
+
+    <div class="project-cont">
+        <div class="project-img-wrap">
+            <img id="scrape-img" class="project-img" src="images/tie.jpg" onclick="show_descr('scrape-img', 'scrape-word')">
+            <div id="scrape-word" class="project-img-descr" onclick="show_descr('scrape-img', 'scrape-word')">Web scraping bot that extracts job data such as title, salary, and location from Indeed. There was supposed to be more but... I ran out of API keys.</div>
+        </div>
+            <p>Web Scraping Indeed Job Postings</p>
+            <p class="subtext">Python, BeautifulSoup, web scraping, data mining</p>
+            <p><a href="https://www.kaggle.com/code/lumarian/web-scraping-indeed-job-postings" target="_blank">Kaggle</a></p>
+    </div>
+
+    <div class="project-cont">
+        <div class="project-img-wrap">
+            <img id="consort-img" class="project-img" src="images/dashboard_png.png" onclick="show_descr('consort-img', 'consort-word')">
+            <div id="consort-word" class="project-img-descr" onclick="show_descr('consort-img', 'consort-word')">Dashboard I worked on during my time at Edwards Lifesciences. Categorizes patients by their trial status as specified by the biostatisticians, and generates a consort diagram.</div>
+        </div>
+            <p>Clinical Trial Tracker Dashboard</p>
+            <p class="subtext">R, R shiny</p>
+    </div>
+
+    <div class="project-cont">
+        <div class="project-img-wrap">
+            <img id="crf-img" class="project-img" src="images/cdisc.JPG" onclick="show_descr('crf-img', 'crf-word')">
+            <div id="crf-word" class="project-img-descr" onclick="show_descr('crf-img', 'crf-word')">Python Flask application I built at Edwards Lifesciences. Automatically annotates Case Report Forms (CRF) with CDISC 
+                 standards for submission to the FDA</div>
+        </div>
+            <p>Flask App for Automatic CRF Annotations</p>
+            <p class="subtext">Python, NLP, Flask</p>
+    </div>
+
+    <div class="project-cont">
+        <div class="project-img-wrap">
+            <img id="com-img" class="project-img" src="images/CoM.png" onclick="show_descr('com-img', 'com-word')">
+            <div id="com-word" class="project-img-descr">Website hosted on AWS that archives Dungeons and Dragons campaigns run by me and my friends. Indefinitely under construction &#128575</div>
+        </div>
+            <p>City of Mist Website</p>
+            <p class="subtext">HTML, CSS, Javascript, UI/UX, AWS</p>
+            <p>
+                <a href="http://www.misterysolvers.com/" target="_blank">Website</a> |
+                <a href="https://github.com/si-rui126/mistery-solvers" target="_blank">GitHub</a>
+            </p>
+    </div>
+
+    <div class="project-cont">
+        <div class="project-img-wrap">
+            <img id="lol-img" class="project-img" src="images/decision_tree.png" onclick="show_descr('lol-img', 'lol-word')">
+            <div id="lol-word" class="project-img-descr" onclick="show_descr('lol-img', 'lol-word')">Predicting win probability in League of Legends with a variety of machine learning methods.</div>
+        </div>
+            <p>League of Legends Win Probability Predictor</p>
+            <p class="subtext">Python, Decision Trees, Random Forest, XGBoost, sklearn</p>
+            <p><a href="https://www.kaggle.com/code/lumarian/league-of-legends-10-min-prediction-model" target="_blank">Kaggle</a></p>
+    </div>
+</div>
 </div>
