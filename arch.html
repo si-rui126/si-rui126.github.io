@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="./components/header.js" type="text/javascript" defer></script>
+    <script src="./components/scripts.js" type="text/javascript" defer></script>
+    <script src="https://kit.fontawesome.com/166b9e2f1d.js" crossorigin="anonymous"></script>
+</head>
+<title>Architecture Portfolio</title>
+
+<style>
+    #riverside-more {display: none;}
+    #temporis-more {display: none;}
+</style>
+
+<header-component id="top-of-page"></header-component>
+
+<div class="middlecolumn">
+    <h1>Featured Architecture Work</h1>
+    <div class="res-p">
+        While I am now pursuing a statistics/data science career full-time, I'm still very grateful for my time as an architecture student! 
+        Here are some of my favorite projects that I've worked on.
+    </div>
+    <br>
+    <h3>Table of Contents</h3>
+        <div class="res-p" style="text-indent: 15px;"><strong><a href="#riverside">Riverside Respite </a></strong>- Fentanyl Crisis Design Response</div>
+        <div class="res-p" style="text-indent: 15px;"><strong><a href="#temporis">Temporis Processum </a></strong>- Funeral Home and Learning Center</div>
+        <div class="res-p" style="text-indent: 15px;"><strong><a href="#bottleneck">Bottleneck Complex </a></strong>- Planned Unit Development team project </div>
+        <div class="res-p" style="text-indent: 15px;"><strong><a href="#airplane">Canary Hangar</a></strong>- Airplane Hangar design project</div>
+    <br>
+    <div class="res-p">Note: The files are quite big so they might not load on mobile. sorry! :((</div>
+    <hr>
+    <h3 id="riverside">Riverside Respite</h3>
+    <div class="res-p"><i>Semester Project, ARCH 5212 (Studio 05 - Advanced Design)</i></div>
+    <br>
+    <div class="res-p">
+        I spent the semester designing a treatment center for people affected by Opiod Use Disorder (OUD).
+        It was an honor working with Hibat, an forerunner of the OUD relief movement in Minneapolis.
+        Her treatment center, which provided resources to specifically Muslim and Somali women, was shut down due to zoning codes, and our studio was given the chance to offer some designs for the rebuilding of her center. 
+        Our preliminary research involved<span id="riverside-dots" class="dots">...</span>
+        <span id="riverside-more">
+            studying cases of OUD in the local area, Hennepin County. We gathered information such as geographical location, income level, and demographics of opioid related emergencies.
+            I never thought that there would be an intersection between my statistics and architecture courses, but the skills I picked up as a stats major
+            came in handing for processing, visualizing, and analyzing the data. We studied the impact of OUD on Muslim and Somali community through research and surveying 
+            in order for us to create a design that was both gender specific and culturally responsive.
+            Prayer rooms were designated in a quiet area far away from street noise, the kitchen was organized to encourage family style meals, 
+            and the street facing entrance was allocated for a small buisness. 
+            The streetfront buisness is a soft-barrier from the world and also provides the girls with work opportunities to help with their transistion back to their regular lives when they are ready to be discharged. 
+            I'm so grateful for my professor, Molly Reichert, for the chance to work on such a fulfilling project and to engage with so many different perspectives.
+            Also big thanks to Hibat, who was always willing to answer my questions and handled everything with such gentleness and respect.
+            Overall, this was one of my favorite designs and doing the data visualization actually gave me the confidence to apply to Statistics Masters programs, so I wouldn't be where I am today without this project.
+        </span>
+        <button class="read-button" id="riverside-btn" onclick="show_moreless('riverside-dots', 'riverside-more', 'riverside-btn')">Read more</button>
+    </div>
+    <br>
+    <object class="pdf" 
+    data="docs\Riverside_respite.pdf", height="1200">
+    </object>
+    <hr>
+</div>
+
+<div class="middlecolumn">
+    <h3 id="temporis">Temporis Processum</h3>
+    <div class="res-p"><i>Final Project, ARCH 4283 (Studio 03 - Program)</i></div>
+    <br>
+    <div class="res-p">
+        We were instructed to design an experiential learning center based on a randomly assigned topic.
+        My topic was "mourning", so I decided on a funeral home that doubled as an educational experience. 
+        This was a challenge to merge the two concepts, but<span id="temporis-dots" class="dots">...</span>
+        <span id="temporis-more">
+            I focused on presenting the idea of mortality as the destination of a fulfilling journey.
+            Recovering from grief is not a linear path and looks different for everyone, but it will heal over time eventually.
+            That's why this project is called "Temporis Processum", which means "passage of time" in Latin (in hindsight, this was so pretentious but it was very much the vibe at the time).
+        </span>
+        <button class="read-button" id="temporis-btn" onclick="show_moreless('temporis-dots', 'temporis-more', 'temporis-btn')">Read more</button>
+    </div>
+    <br>
+    <object class="pdf" 
+    data="docs\Temporis_processum.pdf", height="1200">
+    </object>
+    <hr>
+</div>
+
+<div class="middlecolumn">
+    <h3 id="bottleneck">Bottleneck Complex</h3>
+    <div class="res-p"><i>Group Assignment, ARCH 3391 (Design and Representation with BIM)</i></div>
+    <br>
+    <div class="res-p">
+        Massing exercise in Revit, where we were tasked with creating two irregularly shaped PUDs (planned unit developments).
+        Big shoutout to my partner Maren, who did the hard work of drafting most of the floorplans while I got to mess around with the 3D renders. 
+    </div>
+    <br>
+    <object class="pdf" 
+    data="docs\Lu_Thompson_PUD Project.pdf", height="1200">
+    </object>
+    <hr>
+</div>
+
+<div class="middlecolumn">
+    <h3 id="airplane">Canary Hangar</h3>
+    <div class="res-p"><i>Assignment, ARCH 3391 (Design and Representation with BIM)</i></div>
+    <br>
+    <div class="res-p">
+        This was one of our first projects in the BIM class. It's very simple but I like how it turned out.
+    </div>
+    <br>
+    <object class="pdf" 
+    data="docs\Lu,Airplane_Hangar,ARCH_3391.pdf", height="1200">
+    </object>
+    <hr>
+
+    <br>
+    <p style="text-align: center;"><a href="#top-of-page">back to top</a></p>
+    <br>
+</div>
+

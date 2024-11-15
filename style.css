@@ -175,6 +175,17 @@ li {
   color: #37676b;
 }
 
+/* arch portfolio */
+.read-button {
+  background-color: transparent;
+  color: #319ab9;
+  text-decoration: underline;
+  border: none;
+}
+.read-button:hover {
+  cursor: pointer;
+}
+
 
 
 /* responsiveness */
