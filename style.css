@@ -99,7 +99,6 @@
     font-family: var(font-fam);
     line-height: 150%;
     text-align: left;
-    color: #828383;
     letter-spacing: .5px;
     width: 40%;
     text-align: center;
@@ -159,6 +158,7 @@
   }
 
   .project-img-descr{
+    pointer-events: none;
     position: absolute;
     top: 50%;
     left: 50%;

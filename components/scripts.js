@@ -68,8 +68,6 @@ function w3RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-
-
 // Displays project decription when image is clicked (for mobile users)
 function show_descr(img_id, word_id) {
     img = document.getElementById(img_id);
