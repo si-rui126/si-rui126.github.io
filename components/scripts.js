@@ -37,8 +37,8 @@ var btnContainer = document.getElementById("btnContainer");
 var btns = btnContainer.getElementsByClassName("filter-btn");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
-    // var current = document.getElementsByClassName("active");
-    // current[0].className = current[0].className.replace(" active", "");
+    var current = document.getElementsByClassName("filter-btn active");
+    current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
 }
@@ -68,7 +68,7 @@ function w3RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-// Displays project decription when image is clicked (for mobile users)
+/*************** Displays project decription when image is clicked (for mobile users) ***************/
 function show_descr(img_id, word_id) {
     img = document.getElementById(img_id);
     word = document.getElementById(word_id);
