@@ -12,43 +12,61 @@
 </head>
 <title>Projects</title>
 <style>
-  a:link, a:visited {
-    text-decoration: underline;
-    color: #001aff;
+  a {
+    text-decoration: none;
   }
 
   a:hover{
-    letter-spacing: 1px;
-    text-decoration: underline;
+    letter-spacing: 0px;
+    text-decoration: none;
   }
 </style>
 
 <header-component id="top-of-page"></header-component>
 
 <div class="middlecolumn">
-    <h1>Projects</h1>
+    <h1><span>projects</span></h1>
     <p style="text-align: center;">note: mobile users can tap on the images for project description. both clicking and hovering work on desktop!! (all the pixel art is by me)</p>
     <hr>
     <div id="btnContainer" style="margin: auto; text-align: center">
         <button id="show-all" class="filter-btn active" onclick="filter_proj('all')">All</button>
         <button class="filter-btn" onclick="filter_proj('ds')">Machine Learning</button>
         <button class="filter-btn" onclick="filter_proj('stat')">Statistics</button>
-        <button class="filter-btn" onclick="filter_proj('bioinf')">Bioinformatics</button>
         <button class="filter-btn" onclick="filter_proj('webdev')">Web Development</button>
         <button class="filter-btn" onclick="filter_proj('oth')">Other</button>
     </div>
 <div class="grid-container">
+    <div class="project-cont ds webdev">
+        <div class="project-img-wrap">
+            <img id="planit-img" class="project-img" src="images/planit.png" onclick="show_descr('planit-img', 'planit-word')">
+            <div id="planit-word" class="project-img-descr" onclick="show_descr('planit-img', 'planit-word')">We’re excited to introduce Planit, an AI-powered travel companion designed to take you around the Plan(i)et. Planit delivers accurate flight and hotel details along with a vibrant travel itinerary tailored to your budget.</div>
+        </div>
+        <p><strong>Planit: Your AI Travel Companion</strong></p>
+        <p class="subtext"><i>(IrvineHacks Best Travel Hack Winner)</i></p>
+        <p class="subtext">React, Tailwind, Javascript, Python Flask, AWS Bedrock</p>
+        <a href="https://devpost.com/software/planit-n7is89" target="_blank"><div class="project-link">DevPost</div></a>
+        <a href="https://github.com/Geoffrey0953/IrvineHacks" target="_blank"><div class="project-link">GitHub</div></a>
+    </div>
+
     <div class="project-cont ds">
         <div class="project-img-wrap">
             <img id="elev-img" class="project-img" src="images/elevator.png" onclick="show_descr('elev-img', 'elev-word')">
             <div id="elev-word" class="project-img-descr" onclick="show_descr('elev-img', 'elev-word')">End-to-end text generator built with a fine-tuned version of GPT2, hosted on Streamlit as a web app. Creates your own personalized elevator pitch!</div>
         </div>
-        <p class="subtext"><strong>Elevator Pitch Generator with LLM</strong></p>
+        <p><strong>Elevator Pitch Generator with LLM</strong></p>
         <p class="subtext">Pytorch, GPT2, LLM Fine-Tuning, Transformers, Streamlit</p>
-        <p class="subtext">
-            <a href="https://text-gen-app-iq4ncbimvgwoawcuhzkuha.streamlit.app/" target="_blank">Web App</a> |
-            <a href="https://github.com/si-rui126/text-gen-app" target="_blank">GitHub</a>
-        </p>
+        <a href="https://text-gen-app-iq4ncbimvgwoawcuhzkuha.streamlit.app/" target="_blank"><div class="project-link">Web App</div></a>
+        <a href="https://github.com/si-rui126/text-gen-app" target="_blank"><div class="project-link">GitHub</div></a>
+    </div>
+
+    <div class="project-cont stat">
+        <div class="project-img-wrap">
+            <img id="tabdash-img" class="project-img" src="images/tabdash.png" onclick="show_descr('tabdash-img', 'tabdash-word')">
+            <div id="tabdash-word" class="project-img-descr" onclick="show_descr('tabdash-img', 'tabdash-word')">Tableau dashboard with visualizations of my internship application process for summer of 2025.</div>
+        </div>
+        <p><strong>Job Application Tracker Dashboard</strong></p>
+        <p class="subtext">Tableau, R, Data Visualization</p>
+        <a href="https://public.tableau.com/app/profile/marian.lu5824/viz/InternshipApplicationTracker/Dashboard1#1" target="_blank"><div class="project-link">View</div></a>
     </div>
 
     <div class="project-cont ds">
@@ -56,10 +74,10 @@
             <img id="ecom-img" class="project-img" src="images\ecommerce.png" onclick="show_descr('ecom-img', 'ecom-word')">
             <div id="ecom-word" class="project-img-descr" onclick="show_descr('ecom-img', 'ecom-word')">Feedforward network that predicts the behavior of a customer based on ecommerce data with up to 90% accuracy.</div>
         </div>
-        <p class="subtext"><strong>Customer Behavior Prediction with FNN</strong></p>
+        <p><strong>Customer Behavior Prediction with FNN</strong></p>
         <p class="subtext">Tensorflow, Neural Networks, Deep Learning</p>
         <p class="subtext">
-            <a href="./docs/customerFNN.html" target="_blank">Notebook</a>
+            <a href="./docs/customerFNN.html" target="_blank"><div class="project-link">Notebook</div></a>
         </p>
     </div>
 
@@ -68,10 +86,10 @@
             <img id="bot-img" class="project-img" src="images\support.png" onclick="show_descr('bot-img', 'bot-word')">
             <div id="bot-word" class="project-img-descr" onclick="show_descr('bot-img', 'bot-word')">Language model built with Pytorch trained on IT support related chatlogs. (still under construction)</div>
         </div>
-        <p class="subtext"><strong>Tech Support Chatbot</strong></p>
+        <p><strong>Tech Support Chatbot</strong></p>
         <p class="subtext">Pytorch, NLP, Neural Networks, Deep Learning</p>
         <p>
-            <a href="https://github.com/si-rui126/tech-supp-chatbot" target="_blank">GitHub</a>
+            <a href="https://github.com/si-rui126/tech-supp-chatbot" target="_blank"><div class="project-link">GitHub</div></a>
         </p>
     </div>
 
@@ -80,11 +98,9 @@
             <img id="rbc-img" class="project-img" src="images\rbc.png" onclick="show_descr('rbc-img', 'rbc-word')">
             <div id="rbc-word" class="project-img-descr" onclick="show_descr('rbc-img', 'rbc-word')">Convolutional Neural Network (CNN) that classifies cells as leukemia blasts or normal using microscopy images.</div>
         </div>
-        <p class="subtext"><strong>Leukemia Cell Classifier with CNN</strong></p>
+        <p><strong>Leukemia Cell Classifier with CNN</strong></p>
         <p class="subtext">Cell Imaging, CNN, Tensorflow, Deep Learning</p>
-        <p class="subtext">
-            <a href=".\docs\Lu,Marian_STAT479_Final_Exam.html" target="_blank">Notebook</a>
-        </p>
+        <a href=".\docs\Lu,Marian_STAT479_Final_Exam.html" target="_blank"><div class="project-link">Notebook</div></a>
     </div>
 
     <div class="project-cont ds stat">
@@ -92,9 +108,9 @@
             <img id="chd-img" class="project-img" src="images/heart_attack.png" onclick="show_descr('chd-img', 'chd-word')">
             <div id="chd-word" class="project-img-descr" onclick="show_descr('chd-img', 'chd-word')">Logistic regression model that predicts if a patient was at risk of heart disease. Used feature engineering, ridge regularization, and likelihood tests.</div>
         </div>
-        <p class="subtext"><strong>Predicting Coronary Heart Disease with Regression</strong></p>
+        <p><strong>Predicting Coronary Heart Disease with Regression</strong></p>
         <p class="subtext">Logistic Regression, R</p>
-        <p><a href="regression.html">Report</a></p>
+        <a href="regression.html"><div class="project-link">Report</div></a>
     </div>
 
     <div class="project-cont ds">
@@ -102,11 +118,9 @@
             <img id="dia-img" class="project-img" src="images\neural_net.png" onclick="show_descr('dia-img', 'dia-word')">
             <div id="dia-word" class="project-img-descr" onclick="show_descr('dia-img', 'dia-word')">Feedforward neural network that predicts if a patient is at risk for diabetes or not.</div>
         </div>
-        <p class="subtext"><strong>Diabetes Diagnosis Classifier with Neural Networks</strong></p>
+        <p><strong>Diabetes Diagnosis Classifier with Neural Networks</strong></p>
         <p class="subtext">Tensorflow, Neural Networks, Deep Learning</p>
-        <p class="subtext">
-            <a href="diabetes.html">Report</a>
-        </p>
+        <a href="diabetes.html"><div class="project-link">Report</div></a>
     </div>
 
     <div class="project-cont stat">
@@ -114,9 +128,9 @@
             <img id="sur-img" class="project-img" src="images/clinical_trials.png" onclick="show_descr('sur-img', 'sur-word')">
             <div id="sur-word" class="project-img-descr" onclick="show_descr('sur-img', 'sur-word')">Survival analysis on clinical trial for throat cancer. Analysis with Cox regresion, Cox PH, Kaplan-Meier, and log-rank tests. </div>
         </div>
-        <p class="subtext"><strong>Clinical Trial on Treatment for Pharyngeal Cancer</strong></p>
+        <p><strong>Clinical Trial on Treatment for Pharyngeal Cancer</strong></p>
         <p class="subtext">Survival Analysis, Biostatistics, SAS</p>
-        <p><a href="survival.html">Report</a></p>
+        <a href="survival.html"><div class="project-link">Report</div></a>
     </div>
 
     <div class="project-cont stat">
@@ -124,9 +138,9 @@
             <img id="typing-img" class="project-img" src="images/keyboard.png" onclick="show_descr('typing-img', 'typing-word')">
             <div id="typing-word" class="project-img-descr" onclick="show_descr('typing-img', 'typing-word')">Analysis how different factors: font size, text length, and screen brightness affects typing speed using a 2^3 Factorial Design with Incomplete Blocking.</div>
         </div>
-        <p class="subtext"><strong>Factors Affecting Typing Speed</strong></p>
+        <p><strong>Factors Affecting Typing Speed</strong></p>
         <p class="subtext">Experimental Design, ANOVA, R</p>
-        <p><a href="expdesign.html">Report</a></p>
+        <p><a href="expdesign.html"><div class="project-link">Report</div></a></p>
     </div>
 
     <div class="project-cont ds">
@@ -134,9 +148,9 @@
             <img id="scrape-img" class="project-img" src="images/tie.png" onclick="show_descr('scrape-img', 'scrape-word')">
             <div id="scrape-word" class="project-img-descr" onclick="show_descr('scrape-img', 'scrape-word')">Web scraping bot that extracts job data such as title, salary, and location from Indeed. There was supposed to be more but... I ran out of API keys.</div>
         </div>
-            <p class="subtext"><strong>Web Scraping Indeed Job Postings</strong></p>
+            <p><strong>Web Scraping Indeed Job Postings</strong></p>
             <p class="subtext">Python, BeautifulSoup, web scraping, data mining</p>
-            <p><a href="https://www.kaggle.com/code/lumarian/web-scraping-indeed-job-postings" target="_blank">Kaggle</a></p>
+            <p><a href="https://www.kaggle.com/code/lumarian/web-scraping-indeed-job-postings" target="_blank"><div class="project-link">Kaggle</div></a></p>
     </div>
 
     <!-- <div class="project-cont">
@@ -158,27 +172,27 @@
             <p class="subtext">Python, NLP, Flask</p>
     </div> -->
 
-    <div class="project-cont bioinf">
+    <div class="project-cont oth">
         <div class="project-img-wrap">
             <img id="orf-img" class="project-img" src="images/orf.png" onclick="show_descr('orf-img', 'orf-word')">
             <div id="orf-word" class="project-img-descr" onclick="show_descr('orf-img', 'orf-word')">Fetches a genome from the bvbrc database and counts the number of ORFs using sequencing techniques.</div>
         </div>
-            <p class="subtext"><strong>ORF (Open Reading Frame) Finder</strong></p>
+            <p><strong>ORF (Open Reading Frame) Finder</strong></p>
             <p class="subtext">DNA Sequencing, Linux, Bash</p>
             <p class="subtext">
-                <a href="https://github.com/si-rui126/ORF_finder" target="_blank">GitHub</a>
+                <a href="https://github.com/si-rui126/ORF_finder" target="_blank"><div class="project-link">GitHub</div></a>
             </p>
     </div>
 
-    <div class="project-cont bioinf">
+    <div class="project-cont oth">
         <div class="project-img-wrap">
             <img id="msa-img" class="project-img" src="images/msa.png" onclick="show_descr('msa-img', 'msa-word')">
             <div id="msa-word" class="project-img-descr" onclick="show_descr('msa-img', 'msa-word')">Analyzed bacterial genomic data from BV-BRC with methods including BLAST, MSA, and Phylogenetic trees.</div>
         </div>
-            <p class="subtext"><strong>Genomic Analysis of Serratia marcescens</strong></p>
+            <p><strong>Genomic Analysis of Serratia marcescens</strong></p>
             <p class="subtext">Protein and DNA Sequencing, BLAST, MSA, Phylogenetic Trees</p>
             <p class="subtext">
-                <a href="biofinal.html" target="_blank">Report</a>
+                <a href="biofinal.html" target="_blank"><div class="project-link">Report</div></a>
             </p>
     </div>
 
@@ -187,10 +201,10 @@
             <img id="leeg-img" class="project-img" src="images/leeg_game.png" onclick="show_descr('leeg-img', 'leeg-word')">
             <div id="leeg-word" class="project-img-descr" onclick="show_descr('leeg-img', 'leeg-word')">Heads Up (charades game) but with League of Legends champions. That's it.</div>
         </div>
-            <p class="subtext"><strong>League of Heads Up</strong></p>
+            <p><strong>League of Heads Up</strong></p>
             <p class="subtext">Javascript, HTML, CSS</p>
             <p>
-                <a href="https://github.com/si-rui126/leeg-heads-up" target="_blank">GitHub</a>
+                <a href="https://github.com/si-rui126/leeg-heads-up" target="_blank"><div class="project-link">GitHub</div></a>
             </p>
     </div>
 
@@ -199,9 +213,9 @@
             <img id="lol-img" class="project-img" src="images/decision_tree.png" onclick="show_descr('lol-img', 'lol-word')">
             <div id="lol-word" class="project-img-descr" onclick="show_descr('lol-img', 'lol-word')">Predicting win probability in League of Legends with a variety of machine learning methods.</div>
         </div>
-            <p class="subtext"><strong>League of Legends Win Probability Predictor</strong></p>
+            <p><strong>League of Legends Win Probability Predictor</strong></p>
             <p class="subtext">Python, Decision Trees, Random Forest, XGBoost, SVM</p>
-            <p><a href="https://www.kaggle.com/code/lumarian/league-of-legends-10-min-prediction-model" target="_blank">Kaggle</a></p>
+            <p><a href="https://www.kaggle.com/code/lumarian/league-of-legends-10-min-prediction-model" target="_blank"><div class="project-link">Kaggle</div></a></p>
     </div>
 
     <div class="project-cont webdev">
@@ -209,10 +223,10 @@
             <img id="girl-img" class="project-img" src="images/girl.png" onclick="show_descr('girl-img', 'girl-word')">
             <div id="girl-word" class="project-img-descr" onclick="show_descr('girl-img', 'girl-word')">"Why did you waste time building from scratch instead of using a template?" For pure love of the game, I guess.</div>
         </div>
-            <p class="subtext"><strong>Personal Portfolio Site</strong></p>
+            <p><strong>Personal Portfolio Site</strong></p>
             <p class="subtext">HTML, CSS, Javascript, UI/UX</p>
             <p class="subtext">
-                <a href="https://github.com/si-rui126/si-rui126.github.io" target="_blank">Github</a>
+                <a href="https://github.com/si-rui126/si-rui126.github.io" target="_blank"><div class="project-link">Github</div></a>
             </p>
     </div>
 
@@ -221,11 +235,11 @@
             <img id="com-img" class="project-img" src="images/CoM.png" onclick="show_descr('com-img', 'com-word')">
             <div id="com-word" class="project-img-descr" onclick="show_descr('com-img', 'com-word')">Website hosted on AWS that archives Dungeons and Dragons campaigns run by me and my friends. Indefinitely under construction &#128575</div>
         </div>
-            <p class="subtext"><strong>City of Mist Website</strong></p>
+            <p><strong>City of Mist Website</strong></p>
             <p class="subtext">HTML, CSS, Javascript, UI/UX, AWS</p>
             <p class="subtext">
-                <a href="http://www.misterysolvers.com/" target="_blank">Website</a> |
-                <a href="https://github.com/si-rui126/mistery-solvers" target="_blank">GitHub</a>
+                <a href="http://www.misterysolvers.com/" target="_blank"><div class="project-link">Website</div></a>
+                <a href="https://github.com/si-rui126/mistery-solvers" target="_blank"><div class="project-link">GitHub</div></a>
             </p>
     </div>
 
@@ -234,10 +248,11 @@
             <img id="arch-img" class="project-img" src="images/arch_port.png" onclick="show_descr('arch-img', 'arch-word')">
             <div id="arch-word" class="project-img-descr" onclick="show_descr('arch-img', 'arch-word')">A selection of my work from when I was an architecture undergrad!</div>
         </div>
-            <p class="subtext"><strong>Architecture Portfolio</strong></p>
+            <p><strong>Architecture Portfolio</strong></p>
             <p class="subtext">Adobe Suite, AutoCAD, Revit, Rhino3D, Enscape, Sketchup</p>
-            <p><a href="arch.html">Portfolio</a></p>
+            <p><a href="arch.html"><div class="project-link">Portfolio</div></a></p>
     </div>
 </div>
 </div>
+
 

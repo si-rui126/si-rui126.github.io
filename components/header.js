@@ -30,9 +30,10 @@ connectedCallback() {
 
     /* Links inside the navbar */
         .navbar navtext {
-            font-family: var(font-fam);
+            font-family: sans-serif;
+            font-size: 3rem;
+            font-weight: bold;
             float: center;
-            font-size: 24px;
             color:rgb(255, 0, 0);
             text-align: center;
             padding: 14px 16px;
@@ -46,7 +47,7 @@ connectedCallback() {
         .navbar a {
             float: center;
             font-size: 20px;
-            color: #aaabac;
+            color:rgb(136, 136, 136);
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
@@ -74,7 +75,6 @@ connectedCallback() {
     <script src="./components/scripts.js" type="text/javascript" defer></script>
     
     <div class="navbar" id="MyTopnav">
-        <navtext>Marian Lu Portfolio</navtext>
         <p><a style="float: center" href="./index.html" class="active">About</a>
         <a style="float: center" href="./projects.html" class="active">Projects</a>
         <a style="float: center" href="./resume.html" class="active">Resume</a>
